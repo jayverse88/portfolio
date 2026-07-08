@@ -2,7 +2,7 @@
 <!-- ⚠ Remplacer raedklaa.com par votre vrai domaine avant la mise en ligne. -->
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url><loc>https://raedklaa.com/</loc><priority>1.0</priority></url>
-  <url><loc>https://raedklaa.com/demo-voyage.html</loc><priority>0.7</priority></url>
-  <url><loc>https://raedklaa.com/demo-immo.html</loc><priority>0.7</priority></url>
-  <url><loc>https://raedklaa.com/demo-dentaire.html</loc><priority>0.7</priority></url>
+  <url><loc>https://raedklaa.com/demos/demo-voyage.html</loc><priority>0.7</priority></url>
+  <url><loc>https://raedklaa.com/demos/demo-immo.html</loc><priority>0.7</priority></url>
+  <url><loc>https://raedklaa.com/demos/demo-dentaire.html</loc><priority>0.7</priority></url>
 </urlset>
