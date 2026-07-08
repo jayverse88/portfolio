@@ -20,3 +20,7 @@ desktop.ini
 
 # Dépendances éventuelles
 node_modules/
+
+# Notes internes — jamais dans le depot public
+CLAUDE.md
+CONTEXT_KEEPER.md
