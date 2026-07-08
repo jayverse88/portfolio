@@ -1,0 +1,518 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<!-- ⚠ DOMAINE : "raedklaa.com" est un PLACEHOLDER. Quand vous aurez votre vrai domaine,
+     remplacez-le partout (Ctrl+H sur "raedklaa.com") dans index.html, les 3 démos, 404.html et sitemap.xml. -->
+<title>Klaa Raéd — Développeur Web & Logiciel Freelance | Algérie & International</title>
+<meta name="description" content="Klaa Raéd, développeur web & logiciel freelance basé en Algérie. Sites, applications et systèmes sur-mesure, sécurisés sérieusement — pour clients algériens et internationaux. Réponse < 24h sur WhatsApp.">
+<link rel="canonical" href="https://raedklaa.com/">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<!-- Open Graph : contrôle l'aperçu quand le lien est partagé sur WhatsApp / Facebook / LinkedIn -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raedklaa.com/">
+<meta property="og:title" content="Klaa Raéd — Développeur Web & Logiciel Freelance">
+<meta property="og:description" content="Sites, applications & systèmes sur-mesure — Algérie → International. Réponse < 24h sur WhatsApp.">
+<meta property="og:image" content="https://raedklaa.com/assets/brand/og-home.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="fr_DZ">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Klaa Raéd — Développeur Web & Logiciel Freelance">
+<meta name="twitter:description" content="Sites, applications & systèmes sur-mesure — Algérie → International.">
+<meta name="twitter:image" content="https://raedklaa.com/assets/brand/og-home.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,400;0,9..144,500;0,9..144,600;0,9..144,700;1,9..144,400;1,9..144,500&family=Instrument+Sans:ital,wght@0,400;0,500;0,600;0,700;1,400&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "Raéd Klaa",
+  "jobTitle": "Développeur Web & Logiciel Freelance",
+  "url": "https://raedklaa.com/",
+  "email": "mailto:klaa.raed.main@gmail.com",
+  "address": { "@type": "PostalAddress", "addressCountry": "DZ" },
+  "sameAs": ["https://github.com/jayverse88"],
+  "knowsLanguage": ["fr", "en", "ar"]
+}
+</script>
+</head>
+<body>
+
+<a class="skip-link" href="#apropos">Aller au contenu</a>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <a href="#top" class="nav__logo">Klaa<span>.</span>Raéd</a>
+  <nav class="nav__links" aria-label="Navigation principale">
+    <a href="#apropos" class="nav-link"><i>01</i> À propos</a>
+    <a href="#processus" class="nav-link"><i>02</i> Processus</a>
+    <a href="#projets" class="nav-link"><i>03</i> Projets</a>
+    <a href="#contact" class="nav-link"><i>04</i> Contact</a>
+  </nav>
+  <a href="#contact" class="nav__cta">Discutons</a>
+  <button class="nav__burger" id="burger" aria-label="Menu" aria-expanded="false" aria-controls="mobileMenu">
+    <span></span><span></span><span></span>
+  </button>
+</header>
+
+<div class="mobile-menu" id="mobileMenu">
+  <a href="#apropos">01 — À propos</a>
+  <a href="#processus">02 — Processus</a>
+  <a href="#projets">03 — Projets</a>
+  <a href="#contact">04 — Contact</a>
+</div>
+
+<!-- HERO -->
+<section class="hero" id="top">
+  <div class="hero__grid">
+    <div class="hero__text">
+      <p class="hero__eyebrow" data-reveal>Raéd Klaa · Développeur web &amp; logiciel · Freelance — Algérie → International</p>
+      <h1 class="hero__title">
+        <span class="line" data-reveal>Votre prochain client</span>
+        <span class="line" data-reveal>vous écrira <em>sur WhatsApp.</em></span>
+      </h1>
+      <p class="hero__sub" data-reveal>
+        Je conçois des sites et des applications pensés pour une seule chose :
+        amener vos visiteurs à vous contacter. Construits proprement,
+        sécurisés sérieusement — pas de template, pas d'agence fictive,
+        pas de blabla.
+      </p>
+      <div class="hero__actions" data-reveal>
+        <a href="#contact" class="btn btn--whatsapp" id="waHero">
+          <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.86.505 3.641 1.462 5.194L2 22l4.918-1.435A9.94 9.94 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.148a8.11 8.11 0 0 1-4.135-1.134l-.297-.176-3.006.877.883-2.928-.194-.303A8.14 8.14 0 0 1 3.851 12c0-4.494 3.656-8.148 8.15-8.148 4.494 0 8.148 3.654 8.148 8.148 0 4.494-3.654 8.148-8.148 8.148z"/></svg>
+          Discuter sur WhatsApp
+        </a>
+        <a href="#projets" class="btn btn--ghost">Voir mes projets →</a>
+      </div>
+      <p class="hero__promise" data-reveal>
+        <span class="tick" aria-hidden="true">✓</span> Réponse en moins de 24h — en français, en anglais ou en darija.
+      </p>
+    </div>
+
+    <!-- Schéma technique annoté (dessin SVG, auto-hébergé) -->
+    <figure class="hero__schema" data-reveal aria-label="Schéma d'architecture : site vitrine relié à une base de données sécurisée, vérification QR et contact WhatsApp">
+      <svg viewBox="0 0 520 540" xmlns="http://www.w3.org/2000/svg" class="schema" role="img" aria-hidden="true">
+        <!-- browser / vitrine -->
+        <g class="draw d1">
+          <rect x="60" y="30" width="230" height="150" rx="6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <line x1="60" y1="62" x2="290" y2="62" stroke="currentColor" stroke-width="1.6"/>
+          <circle cx="78" cy="46" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <circle cx="94" cy="46" r="4" fill="none" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="82" y1="90" x2="212" y2="90" stroke="currentColor" stroke-width="1.4"/>
+          <line x1="82" y1="108" x2="268" y2="108" stroke="currentColor" stroke-width="1.4" opacity=".45"/>
+          <line x1="82" y1="126" x2="240" y2="126" stroke="currentColor" stroke-width="1.4" opacity=".45"/>
+          <rect x="82" y="144" width="86" height="22" rx="11" fill="none" stroke="#c65a2e" stroke-width="1.6"/>
+        </g>
+        <!-- shield -->
+        <g class="draw d2">
+          <path d="M400 60 l52 20 v34 c0 34 -22 54 -52 66 c-30 -12 -52 -32 -52 -66 v-34 z" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M378 112 l16 16 l30 -34" fill="none" stroke="#c65a2e" stroke-width="2"/>
+        </g>
+        <!-- database -->
+        <g class="draw d3">
+          <ellipse cx="150" cy="330" rx="70" ry="20" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M80 330 v82 c0 11 31 20 70 20 s70 -9 70 -20 v-82" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <path d="M80 372 c0 11 31 20 70 20 s70 -9 70 -20" fill="none" stroke="currentColor" stroke-width="1.4" opacity=".5"/>
+        </g>
+        <!-- QR -->
+        <g class="draw d4">
+          <rect x="352" y="300" width="110" height="110" rx="6" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="368" y="316" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="420" y="316" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="368" y="368" width="26" height="26" fill="none" stroke="currentColor" stroke-width="1.6"/>
+          <rect x="420" y="368" width="10" height="10" fill="#c65a2e"/>
+          <rect x="436" y="384" width="10" height="10" fill="none" stroke="currentColor" stroke-width="1.4"/>
+        </g>
+        <!-- connectors -->
+        <g class="wire">
+          <path d="M290 105 C 330 105, 330 92, 348 92" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 6"/>
+          <path d="M175 180 C 175 240, 150 250, 150 306" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 6"/>
+          <path d="M400 182 C 400 240, 407 250, 407 296" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 6"/>
+          <path d="M222 355 L 348 355" fill="none" stroke="currentColor" stroke-width="1.2" stroke-dasharray="5 6"/>
+        </g>
+        <!-- annotations -->
+        <g class="ann">
+          <text x="60" y="212" class="mono">FIG. A — VITRINE / APP</text>
+          <text x="352" y="212" class="mono">SÉCURITÉ RÉELLE</text>
+          <text x="80" y="462" class="mono">BASE DE DONNÉES · PDO</text>
+          <text x="352" y="442" class="mono">QR VÉRIFIABLE</text>
+          <text x="60" y="510" class="mono accent">CSRF · XSS · RATE-LIMIT · UUID v4 — du vrai code défensif</text>
+        </g>
+      </svg>
+      <figcaption class="schema__cap mono">Extrait réel du système Sino-Algéria — voir <a href="#projets">FIG. 03</a></figcaption>
+    </figure>
+  </div>
+  <div class="hero__rule" aria-hidden="true"><span class="mono">SCROLL ↓</span></div>
+</section>
+
+<!-- 01 APROPOS -->
+<section class="section" id="apropos">
+  <div class="section__head">
+    <p class="section__tag mono" data-reveal>FIG. 01 — QUI JE SUIS</p>
+    <h2 class="section__title" data-reveal>Un développeur, <em>pas une agence.</em></h2>
+  </div>
+
+  <div class="apropos__grid">
+    <div class="apropos__text" data-reveal>
+      <p>
+        Je m'appelle <strong>Klaa Raéd</strong>, développeur web &amp; logiciel
+        freelance basé en Algérie. Je travaille avec des entreprises algériennes
+        et des clients à l'international — francophones ou anglophones, peu
+        importe le fuseau horaire.
+      </p>
+      <p>
+        Pas d'intermédiaire, pas d'agence fictive : quand vous travaillez avec moi,
+        vous parlez directement à la personne qui code votre projet — du premier
+        message jusqu'à la mise en ligne. Et je préfère vous montrer du travail
+        vérifiable que vous promettre des chiffres.
+      </p>
+    </div>
+
+    <div class="apropos__cards" data-reveal>
+      <div class="spec-row">
+        <span class="spec-row__num mono">A.1</span>
+        <div>
+          <h3>Sur-mesure, vraiment</h3>
+          <p>Pas de stack imposée, pas de template maquillé — le bon outil pour chaque projet et chaque budget.</p>
+        </div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-row__num mono">A.2</span>
+        <div>
+          <h3>Sécurité réelle</h3>
+          <p>CSRF, XSS, PDO, rate limiting, UUID v4 — pas des mots-clés décoratifs : du code défensif que vous pouvez inspecter.</p>
+        </div>
+      </div>
+      <div class="spec-row">
+        <span class="spec-row__num mono">A.3</span>
+        <div>
+          <h3>Communication directe</h3>
+          <p>WhatsApp ou email, réponse en moins de 24h — en français, en anglais, ou en darija.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- 02 PROCESSUS -->
+<section class="section section--alt" id="processus">
+  <div class="section__head">
+    <p class="section__tag mono" data-reveal>FIG. 02 — COMMENT ÇA SE PASSE</p>
+    <h2 class="section__title" data-reveal>Du premier message <em>à la mise en ligne.</em></h2>
+    <p class="section__sub" data-reveal>Un déroulé simple, sans surprise — vous savez toujours où en est votre projet.</p>
+  </div>
+
+  <ol class="steps">
+    <li class="step" data-reveal>
+      <span class="step__num mono">ÉTAPE 01</span>
+      <h3>On discute</h3>
+      <p>Un message WhatsApp suffit : votre activité, votre besoin, votre budget. Gratuit et sans engagement.</p>
+    </li>
+    <li class="step" data-reveal>
+      <span class="step__num mono">ÉTAPE 02</span>
+      <h3>Devis clair sous 24–48h</h3>
+      <p>Prix, délais et contenu précis, par écrit. Ce qui est inclus est inclus — zéro frais surprise.</p>
+    </li>
+    <li class="step" data-reveal>
+      <span class="step__num mono">ÉTAPE 03</span>
+      <h3>Développement, en transparence</h3>
+      <p>Vous voyez le site avancer avec des démos régulières. Vous corrigez la direction quand vous voulez.</p>
+    </li>
+    <li class="step" data-reveal>
+      <span class="step__num mono">ÉTAPE 04</span>
+      <h3>Mise en ligne &amp; suivi</h3>
+      <p>Déploiement, formation rapide, et je reste joignable après la livraison — je ne disparais pas.</p>
+    </li>
+  </ol>
+
+  <p class="steps__promise mono" data-reveal>→ ENGAGEMENT : RÉPONSE &lt; 24H, 7J/7, FR · EN · DARIJA</p>
+</section>
+
+<!-- 03 PROJETS -->
+<section class="section" id="projets">
+  <div class="section__head">
+    <p class="section__tag mono" data-reveal>FIG. 03 — PROJETS</p>
+    <h2 class="section__title" data-reveal>Un cas réel. <em>Des démos ciblées.</em></h2>
+  </div>
+
+  <!-- ═══════════ ÉTUDE DE CAS — SINO-ALGÉRIA ═══════════ -->
+  <article class="case" data-reveal>
+    <div class="case__head">
+      <div>
+        <p class="case__badge mono">ÉTUDE DE CAS — PROJET CLIENT RÉEL</p>
+        <h3 class="case__title">Invitations Officielles &amp; Visa<br><em>Algérie ↔ Chine</em></h3>
+      </div>
+      <p class="case__status mono">✓ DÉVELOPPEMENT TERMINÉ<br>MISE EN LIGNE PRÉVUE · T3 2026</p>
+    </div>
+
+    <div class="case__grid">
+      <div class="case__story">
+        <h4 class="case__h mono">LE PROBLÈME</h4>
+        <p>
+          Une agence spécialisée délivre des invitations officielles aux voyageurs
+          d'affaires entre l'Algérie et la Chine. Le risque n°1 du métier :
+          <strong>les fausses invitations</strong>. Un seul document falsifié qui
+          atteint l'ambassade, et c'est la crédibilité de toute l'agence qui saute.
+        </p>
+        <h4 class="case__h mono">CE QUE J'AI CONSTRUIT</h4>
+        <p>
+          Une plateforme complète à trois interfaces : une vitrine publique bilingue
+          anglais / chinois avec prise de rendez-vous, un back-office où l'agence gère
+          dossiers, documents et équipe, et une page de vérification dédiée à
+          l'ambassade. Chaque invitation est générée en PDF avec un QR code unique,
+          impossible à deviner, vérifiable en temps réel.
+        </p>
+        <h4 class="case__h mono">LE RÉSULTAT</h4>
+        <p>
+          Un système livré et testé : trois interfaces, deux langues, vingt-et-un
+          fichiers PHP relus ligne par ligne, et une batterie de vérifications
+          automatisées au vert. Le client prépare la mise en ligne.
+        </p>
+      </div>
+
+      <aside class="case__specs">
+        <h4 class="case__h mono">STACK TECHNIQUE</h4>
+        <ul class="case__stack" aria-label="Technologies utilisées">
+          <li>PHP 8</li><li>MySQL</li><li>PDO</li><li>TCPDF</li>
+          <li>phpqrcode</li><li>Tailwind compilé</li><li>JS vanilla</li>
+        </ul>
+        <h4 class="case__h mono">FONCTIONS CLÉS</h4>
+        <ul class="case__feats">
+          <li>PDF officiels (invitation + programme) avec QR code intégré</li>
+          <li>Vérification ambassade en temps réel — EN / 中文</li>
+          <li>Anti-bruteforce à double étage (session + IP en base)</li>
+          <li>Journal d'audit de chaque scan de QR code</li>
+          <li>Gestion d'équipe avec rôles (super admin / admin)</li>
+          <li>Formulaire public blindé : CSRF, honeypot, plafonds d'envoi</li>
+        </ul>
+      </aside>
+    </div>
+
+    <div class="case__security">
+      <div class="case__security-text">
+        <h4 class="case__h mono">LA SÉCURITÉ, CONCRÈTEMENT</h4>
+        <p>
+          Si quelqu'un fabrique une fausse invitation, l'ambassade le découvre en
+          deux secondes : un scan du QR code, et le système répond
+          <strong>« Document introuvable »</strong>. Le vrai document, lui, affiche
+          instantanément l'identité du voyageur et son statut — impossible à imiter
+          sans accès au système.
+        </p>
+      </div>
+      <div class="case__verifs" aria-hidden="true">
+        <div class="verif-card verif-card--ok">
+          <span class="verif-card__icon">✓</span>
+          <span class="verif-card__label mono">DOCUMENT VERIFIED · 文件已验证</span>
+          <span class="verif-card__sub">INV-26T2-0041 — statut : validé</span>
+        </div>
+        <div class="verif-card verif-card--ko">
+          <span class="verif-card__icon">✕</span>
+          <span class="verif-card__label mono">DOCUMENT NOT FOUND · 文件未找到</span>
+          <span class="verif-card__sub">QR inconnu du système — document rejeté</span>
+        </div>
+      </div>
+    </div>
+
+        <div class="project__gallery project__gallery--case" id="sinoGallery">
+          <figure tabindex="0" role="button" aria-label="Agrandir : Vitrine publique">
+            <img src="assets/sino-algeria/vitrine-hero.png" alt="Vitrine publique — page d'accueil bilingue EN/中文" loading="lazy" width="1366" height="768">
+            <figcaption>Vitrine publique</figcaption>
+          </figure>
+          <figure tabindex="0" role="button" aria-label="Agrandir : Tableau de bord admin">
+            <img src="assets/sino-algeria/admin-dashboard.png" alt="Tableau de bord admin avec statistiques trimestrielles" loading="lazy" width="1366" height="768">
+            <figcaption>Tableau de bord admin</figcaption>
+          </figure>
+          <figure tabindex="0" role="button" aria-label="Agrandir : Vérification QR ambassade">
+            <img src="assets/sino-algeria/verif-valid.png" alt="Page de vérification QR pour l'ambassade — invitation validée" loading="lazy" width="1366" height="768">
+            <figcaption>Vérification QR · ambassade</figcaption>
+          </figure>
+          <figure tabindex="0" role="button" aria-label="Agrandir : Sécurité rate limiting">
+            <img src="assets/sino-algeria/admin-login.png" alt="Écran de connexion admin avec blocage anti-bruteforce" loading="lazy" width="1366" height="768">
+            <figcaption>Sécurité · rate limiting</figcaption>
+          </figure>
+          <figure tabindex="0" role="button" aria-label="Agrandir : Formulaire de contact">
+            <img src="assets/sino-algeria/vitrine-contact.png" alt="Formulaire de demande sur la vitrine publique" loading="lazy" width="1366" height="768">
+            <figcaption>Formulaire de contact</figcaption>
+          </figure>
+          <figure tabindex="0" role="button" aria-label="Agrandir : Détail dossier vérifié">
+            <img src="assets/sino-algeria/verif-detail.png" alt="Détail d'un dossier vérifié par QR code" loading="lazy" width="1366" height="768">
+            <figcaption>Détail dossier vérifié</figcaption>
+          </figure>
+        </div>
+  </article>
+
+  <!-- ═══════════ DÉMOS — trois secteurs, trois identités ═══════════ -->
+  <div class="demos">
+    <p class="demos__note mono" data-reveal>
+      DÉMOS DE STYLE — TROIS SECTEURS, TROIS IDENTITÉS VISUELLES RADICALEMENT
+      DIFFÉRENTES. LA VÔTRE SERA LA QUATRIÈME.
+    </p>
+
+    <a href="demo-voyage.html" class="demo-row" style="--c:#ef6a48" data-reveal>
+      <span class="demo-row__num" aria-hidden="true">D.01</span>
+      <div class="demo-row__body">
+        <p class="demo-row__sector mono">AGENCE DE VOYAGE</p>
+        <h3>Karavane Voyages</h3>
+        <p class="demo-row__desc">
+          Vitrine cinématique lumineuse : slideshow immersif de vraies destinations,
+          globe 3D interactif que le visiteur fait tourner, réservation qui aboutit
+          directement dans WhatsApp.
+        </p>
+        <p class="demo-row__tags mono">SLIDESHOW KEN-BURNS · GLOBE 3D · DEVIS WHATSAPP</p>
+      </div>
+      <span class="demo-row__cta">Voir la démo <i>→</i></span>
+    </a>
+
+    <a href="demo-immo.html" class="demo-row" style="--c:#b08d57" data-reveal>
+      <span class="demo-row__num" aria-hidden="true">D.02</span>
+      <div class="demo-row__body">
+        <p class="demo-row__sector mono">AGENCE IMMOBILIÈRE</p>
+        <h3>Horizon Patrimoine</h3>
+        <p class="demo-row__desc">
+          Prestige nocturne, noir et bronze : recherche qui filtre réellement les
+          biens (type, ville, chambres), et plan de villa interactif à explorer
+          pièce par pièce.
+        </p>
+        <p class="demo-row__tags mono">RECHERCHE FONCTIONNELLE · PLAN INTERACTIF · NOIR &amp; BRONZE</p>
+      </div>
+      <span class="demo-row__cta">Voir la démo <i>→</i></span>
+    </a>
+
+    <a href="demo-dentaire.html" class="demo-row" style="--c:#0d9488" data-reveal>
+      <span class="demo-row__num" aria-hidden="true">D.03</span>
+      <div class="demo-row__body">
+        <p class="demo-row__sector mono">CABINET DENTAIRE</p>
+        <h3>Cabinet Éclat</h3>
+        <p class="demo-row__desc">
+          Clinique et rassurant : prise de rendez-vous interactive en quatre étapes
+          — spécialité, jour, heure, coordonnées — confirmée en un clic sur
+          WhatsApp, vendredis automatiquement exclus.
+        </p>
+        <p class="demo-row__tags mono">BOOKER 4 ÉTAPES · RDV WHATSAPP · DESIGN CLINIQUE</p>
+      </div>
+      <span class="demo-row__cta">Voir la démo <i>→</i></span>
+    </a>
+  </div>
+
+  <div class="marquee" data-reveal aria-hidden="true">
+    <div class="marquee__track mono">
+      <span>AGENCES DE VOYAGE</span><b>·</b>
+      <span>IMMOBILIER</span><b>·</b>
+      <span>SANTÉ</span><b>·</b>
+      <span>E-COMMERCE</span><b>·</b>
+      <span>RESTAURATION</span><b>·</b>
+      <span>ÉDUCATION</span><b>·</b>
+      <span>FINANCE</span><b>·</b>
+      <span>ET VOTRE SECTEUR.</span><b>·</b>
+      <span>AGENCES DE VOYAGE</span><b>·</b>
+      <span>IMMOBILIER</span><b>·</b>
+      <span>SANTÉ</span><b>·</b>
+      <span>E-COMMERCE</span><b>·</b>
+      <span>RESTAURATION</span><b>·</b>
+      <span>ÉDUCATION</span><b>·</b>
+      <span>FINANCE</span><b>·</b>
+      <span>ET VOTRE SECTEUR.</span><b>·</b>
+    </div>
+  </div>
+</section>
+
+<!-- 04 TEMOIGNAGES -->
+<section class="section section--alt" id="temoignages">
+  <div class="section__head">
+    <p class="section__tag mono" data-reveal>FIG. 04 — PAROLES DE CLIENTS</p>
+    <h2 class="section__title" data-reveal>Cette place est réservée <em>à vos retours.</em></h2>
+    <p class="section__sub" data-reveal>
+      Je débute en freelance et je refuse d'afficher de faux avis — vous en avez
+      déjà trop vu. Voici à quoi ressemblera cet espace quand mes premiers clients
+      auront parlé. Peut-être le vôtre ?
+    </p>
+  </div>
+
+  <!-- ✏ QUAND VOUS AUREZ DE VRAIS TÉMOIGNAGES :
+       remplacez le contenu des deux blocs ci-dessous (citation + nom + contexte)
+       et supprimez la classe "quote--sample" ainsi que le petit tag "EXEMPLE". -->
+  <div class="quotes">
+    <blockquote class="quote quote--sample" data-reveal>
+      <span class="quote__sample-tag mono">EXEMPLE — EN ATTENTE DE VOTRE PROJET</span>
+      <p>« Ici, votre témoignage : ce que le site a changé pour votre activité, en une ou deux phrases honnêtes. »</p>
+      <footer><strong>Votre nom</strong><span class="mono">Votre entreprise · secteur</span></footer>
+    </blockquote>
+    <blockquote class="quote quote--sample" data-reveal>
+      <span class="quote__sample-tag mono">EXEMPLE — EN ATTENTE DE VOTRE PROJET</span>
+      <p>« Et ici, celui du client suivant. Je préfère deux vraies phrases à dix étoiles inventées. »</p>
+      <footer><strong>Nom du client</strong><span class="mono">Entreprise · secteur</span></footer>
+    </blockquote>
+  </div>
+</section>
+
+<!-- 05 EN SUMMARY -->
+<section class="section section--en" id="english">
+  <div class="section__head">
+    <p class="section__tag mono" data-reveal>FIG. 05 — FOR ENGLISH-SPEAKING CLIENTS</p>
+    <h2 class="section__title" data-reveal>Yes, I work <em>in English too.</em></h2>
+    <p class="section__sub section__sub--en" data-reveal>
+      I'm Raéd, a freelance web &amp; software developer based in Algeria (UTC+1).
+      I build custom websites, web apps and internal tools with a strong focus on
+      security (CSRF/XSS protection, prepared statements, rate limiting) and on
+      one business outcome: turning your visitors into conversations.
+      Message me on WhatsApp — I reply within 24 hours.
+    </p>
+    <div class="hero__actions" data-reveal>
+      <a href="#" class="btn btn--ghost btn--en" id="waEn">Chat on WhatsApp (English) →</a>
+    </div>
+  </div>
+</section>
+
+<!-- 06 CONTACT -->
+<section class="section section--contact" id="contact">
+  <div class="contact__inner">
+    <p class="section__tag mono" data-reveal>FIG. 06 — CONTACT</p>
+    <h2 class="contact__title" data-reveal>Discutons de <em>votre projet.</em></h2>
+    <p class="contact__sub" data-reveal>
+      Écrivez-moi sur WhatsApp ou par email — réponse en moins de 24h,
+      en français, en anglais ou en darija.
+    </p>
+    <div class="contact__actions" data-reveal>
+      <a href="#" class="btn btn--whatsapp btn--lg" id="waMain">
+        <svg viewBox="0 0 24 24" width="22" height="22" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.872.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347z"/><path d="M12.001 2C6.478 2 2 6.477 2 12c0 1.86.505 3.641 1.462 5.194L2 22l4.918-1.435A9.94 9.94 0 0 0 12.001 22C17.523 22 22 17.523 22 12S17.523 2 12.001 2zm0 18.148a8.11 8.11 0 0 1-4.135-1.134l-.297-.176-3.006.877.883-2.928-.194-.303A8.14 8.14 0 0 1 3.851 12c0-4.494 3.656-8.148 8.15-8.148 4.494 0 8.148 3.654 8.148 8.148 0 4.494-3.654 8.148-8.148 8.148z"/></svg>
+        Écrire sur WhatsApp
+      </a>
+      <a href="mailto:klaa.raed.main@gmail.com" class="btn btn--ghost btn--lg">
+        klaa.raed.main@gmail.com
+      </a>
+    </div>
+    <div class="contact__socials" data-reveal>
+      <a href="https://github.com/jayverse88" target="_blank" rel="noopener" class="social-chip mono">GitHub ↗</a>
+      <!-- TODO : créer votre profil LinkedIn puis remplacer ce span par
+           <a href="https://www.linkedin.com/in/VOTRE-PROFIL" target="_blank" rel="noopener" class="social-chip mono">LinkedIn ↗</a> -->
+      <span class="social-chip social-chip--soon mono" title="Profil en cours de création">LinkedIn — bientôt</span>
+    </div>
+  </div>
+</section>
+
+<footer class="footer">
+  <p class="mono">© <span id="year"></span> KLAA RAÉD — ALGER, DZ · FR / EN / دارجة</p>
+  <a href="#top" class="footer__top mono">HAUT DE PAGE ↑</a>
+</footer>
+
+<div class="lightbox" id="lightbox" role="dialog" aria-modal="true" aria-label="Galerie d'images">
+  <button class="lightbox__close" id="lightboxClose" aria-label="Fermer">&times;</button>
+  <button class="lightbox__nav lightbox__nav--prev" id="lightboxPrev" aria-label="Image précédente">‹</button>
+  <figure class="lightbox__frame">
+    <img class="lightbox__img" id="lightboxImg" src="" alt="">
+    <figcaption class="lightbox__caption mono" id="lightboxCaption"></figcaption>
+  </figure>
+  <button class="lightbox__nav lightbox__nav--next" id="lightboxNext" aria-label="Image suivante">›</button>
+</div>
+
+<script src="js/cursor.js" defer></script>
+<script src="js/main.js" defer></script>
+</body>
+</html>
+

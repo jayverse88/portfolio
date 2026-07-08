@@ -1,0 +1,6 @@
+# robots.txt — Klaa Raéd portfolio
+# ⚠ Remplacer raedklaa.com par votre vrai domaine avant la mise en ligne.
+User-agent: *
+Allow: /
+
+Sitemap: https://raedklaa.com/sitemap.xml

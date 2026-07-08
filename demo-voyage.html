@@ -1,0 +1,375 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>Karavane Voyages — Démo agence de voyage | Klaa Raéd</title>
+<meta name="description" content="Démo de site web pour agence de voyage, réalisée par Klaa Raéd — freelance développeur web. Vraies destinations, globe 3D interactif, animations cinématiques.">
+<link rel="canonical" href="https://raedklaa.com/demo-voyage.html">
+<link rel="icon" type="image/svg+xml" href="assets/brand/favicon.svg">
+<link rel="icon" type="image/png" sizes="32x32" href="assets/brand/favicon-32.png">
+<link rel="apple-touch-icon" href="assets/brand/apple-touch-icon.png">
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raedklaa.com/demo-voyage.html">
+<meta property="og:title" content="Karavane Voyages — Démo agence de voyage">
+<meta property="og:description" content="Vitrine cinématique : slideshow immersif, globe 3D interactif, réservation WhatsApp. Démo par Klaa Raéd.">
+<meta property="og:image" content="https://raedklaa.com/assets/brand/og-voyage.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:image" content="https://raedklaa.com/assets/brand/og-voyage.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="preconnect" href="https://images.unsplash.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/voyage.css">
+<link rel="preload" as="image" fetchpriority="high" href="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=1600&q=75">
+</head>
+<body>
+
+  <!-- curseur custom -->
+  <div class="cursor" id="cursor"></div>
+  <div class="cursor-ring" id="cursorRing"></div>
+
+  <!-- ===== Bandeau démo ===== -->
+  <div class="demo-strip">
+    <span>✦ Démo de style — projet fictif réalisé par <strong>Klaa Raéd</strong></span>
+    <a href="index.html#projets">← Retour au portfolio</a>
+  </div>
+
+  <!-- ===== Nav ===== -->
+  <header class="kv-nav" id="kvNav">
+    <a href="#top" class="kv-logo" data-magnetic>Karavane<span>.</span></a>
+    <nav class="kv-links">
+      <a href="#pourquoi">Pourquoi nous</a>
+      <a href="#globe">Le monde</a>
+      <a href="#destinations">Destinations</a>
+      <a href="#avis">Histoires</a>
+      <a href="#contact" class="kv-cta" data-magnetic>Demander un devis</a>
+    </nav>
+    <button class="kv-burger" id="kvBurger" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+  </header>
+  <div class="kv-mobile" id="kvMobile">
+    <a href="#pourquoi">Pourquoi nous</a>
+    <a href="#globe">Le monde</a>
+    <a href="#destinations">Destinations</a>
+    <a href="#avis">Histoires</a>
+    <a href="#contact">Demander un devis</a>
+  </div>
+
+  <!-- ===== HERO ===== -->
+  <section class="hero" id="top">
+    <!-- slideshow photo cinématique -->
+    <div class="hero__slides" id="heroSlides">
+      <div class="hero__slide is-active" style="background-image:url('https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&w=1600&q=75')" data-bg="https://images.unsplash.com/photo-1613395877344-13d4a8e0d49e?auto=format&fit=crop&q=75" data-place="Santorini, Grèce"></div>
+      <div class="hero__slide" data-bg="https://images.unsplash.com/photo-1514282401047-d79a71a590e8?auto=format&fit=crop&q=75" data-place="Maldives"></div>
+      <div class="hero__slide" data-bg="https://images.unsplash.com/photo-1674941237715-6f4f9a58636a?auto=format&fit=crop&q=75" data-place="Cappadoce, Turquie"></div>
+      <div class="hero__slide" data-bg="https://images.unsplash.com/photo-1555400038-63f5ba517a47?auto=format&fit=crop&q=75" data-place="Bali, Indonésie"></div>
+      <div class="hero__slide" data-bg="https://images.unsplash.com/photo-1512453979798-5ea266f8880c?auto=format&fit=crop&q=75" data-place="Dubaï, Émirats"></div>
+    </div>
+    <div class="hero__veil"></div>
+    <canvas class="hero__dust" id="heroDust"></canvas>
+
+    <div class="hero__content">
+      <p class="hero__place" id="heroPlace"><span class="dot"></span><span id="heroPlaceTxt">Santorini, Grèce</span></p>
+      <h1 class="hero__title">
+        <span class="line"><span class="w">Le</span> <span class="w">monde</span> <span class="w">vous</span></span>
+        <span class="line"><span class="w">attend.</span> <em class="w">Partez.</em></span>
+      </h1>
+      <p class="hero__sub">Vols, hôtels, visas, circuits sur-mesure — tout organisé par un vrai conseiller, joignable sur WhatsApp du premier rêve jusqu'au retour.</p>
+      <div class="hero__actions">
+        <a href="#destinations" class="btn btn--primary" data-magnetic>Découvrir les destinations</a>
+        <a href="#contact" class="btn btn--glass" data-magnetic>Demander un devis</a>
+      </div>
+    </div>
+
+    <div class="hero__dots" id="heroDotsWrap"></div>
+
+    <a href="#pourquoi" class="hero__scroll" aria-label="Défiler">
+      <span>Explorez</span>
+      <div class="hero__scroll-line"><i></i></div>
+    </a>
+  </section>
+
+  <!-- ===== Marquee confiance ===== -->
+  <div class="trust-marquee">
+    <div class="trust-marquee__track">
+      <span>+30 destinations</span><b>✦</b>
+      <span>+2 000 voyageurs accompagnés</span><b>✦</b>
+      <span>Devis en moins de 24h</span><b>✦</b>
+      <span>Conseiller dédié sur WhatsApp</span><b>✦</b>
+      <span>Prix transparents, zéro frais caché</span><b>✦</b>
+      <span>+30 destinations</span><b>✦</b>
+      <span>+2 000 voyageurs accompagnés</span><b>✦</b>
+      <span>Devis en moins de 24h</span><b>✦</b>
+      <span>Conseiller dédié sur WhatsApp</span><b>✦</b>
+      <span>Prix transparents, zéro frais caché</span><b>✦</b>
+    </div>
+    <p class="trust-note">Chiffres illustratifs — agence fictive présentée comme démonstration de style.</p>
+  </div>
+
+  <!-- ===== Pourquoi nous ===== -->
+  <section class="section" id="pourquoi">
+    <p class="section__eyebrow" data-reveal>Pourquoi nous</p>
+    <h2 class="section__title" data-reveal>Voyager, sans jamais y penser deux fois.</h2>
+
+    <div class="why-grid">
+      <div class="why-card" data-reveal data-tilt>
+        <div class="why-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><rect x="6" y="16" width="36" height="24" rx="4" stroke="currentColor" stroke-width="2.4"/><path d="M17 16v-4a4 4 0 0 1 4-4h6a4 4 0 0 1 4 4v4" stroke="currentColor" stroke-width="2.4"/><path d="M6 26h36" stroke="currentColor" stroke-width="2.4"/></svg>
+        </div>
+        <h3>Sur-mesure</h3>
+        <p>Chaque itinéraire est construit autour de vous — jamais un catalogue figé de circuits tout faits.</p>
+      </div>
+      <div class="why-card" data-reveal data-tilt>
+        <div class="why-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M8 12a4 4 0 0 1 4-4h24a4 4 0 0 1 4 4v18a4 4 0 0 1-4 4H20l-9 8v-8h-3a4 4 0 0 1-4-4Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Un humain, pas un robot</h3>
+        <p>Un conseiller dédié, joignable directement sur WhatsApp, du premier message jusqu'à votre retour.</p>
+      </div>
+      <div class="why-card" data-reveal data-tilt>
+        <div class="why-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><path d="M24 5 8 11v11c0 10 7 16.5 16 21 9-4.5 16-11 16-21V11Z" stroke="currentColor" stroke-width="2.4" stroke-linejoin="round"/><path d="M17 24l5 5 10-11" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Prix transparents</h3>
+        <p>Des prix clairs, aucun frais caché, une confirmation immédiate de chaque réservation.</p>
+      </div>
+      <div class="why-card" data-reveal data-tilt>
+        <div class="why-card__icon">
+          <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="18" stroke="currentColor" stroke-width="2.4"/><path d="M24 14v10l7 5" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        </div>
+        <h3>Toujours réactif</h3>
+        <p>Un devis envoyé sous 24h, et un support disponible pendant toute la durée de votre voyage.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== GLOBE 3D ===== -->
+  <section class="globe-sec" id="globe">
+    <div class="globe-sec__stars" id="globeStars"></div>
+    <div class="globe-sec__head">
+      <p class="section__eyebrow light" data-reveal>Le monde entier</p>
+      <h2 class="section__title light" data-reveal>Choisissez un point.<br>On vous y emmène.</h2>
+      <p class="globe-sec__sub" data-reveal>Faites tourner le globe. Chaque lumière est une destination que l'on organise pour vous, clés en main.</p>
+    </div>
+    <div class="globe-wrap" id="globeWrap">
+      <div class="globe-canvas" id="globeCanvas" role="img" aria-label="Globe 3D interactif présentant nos destinations : Alger, Santorini, Istanbul, Paris, Marrakech, Le Caire, Dubaï, Maldives, Bali"></div>
+      <div class="globe-label" id="globeLabel"><span></span></div>
+      <div class="globe-legend" id="globeLegend">
+        <button class="globe-legend__btn is-on" id="globeToggle" data-magnetic>❚❚ Pause rotation</button>
+        <span class="globe-hint">Glissez pour explorer →</span>
+      </div>
+      <div class="globe-fallback" id="globeFallback">
+        <div class="globe-fallback__ring"></div>
+        <p>Le globe interactif ne s'affiche pas sur ce navigateur — voici nos destinations phares :</p>
+        <div class="globe-fallback__pins">
+          <span>🇩🇿 Alger</span><span>Santorini</span><span>Istanbul</span><span>Paris</span>
+          <span>Marrakech</span><span>Le Caire</span><span>Dubaï</span><span>Maldives</span><span>Bali</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Destinations ===== -->
+  <section class="section section--warm" id="destinations">
+    <p class="section__eyebrow" data-reveal>Destinations phares</p>
+    <h2 class="section__title" data-reveal>De quoi rêvez-vous, cette année ?</h2>
+
+    <div class="dest-grid">
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1570077188670-e3a8d69ac5ff?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Santorini, Grèce"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Grèce</span>
+          <h3>Santorini</h3>
+          <p>Villages blancs suspendus, dômes bleus et couchers de soleil sur la caldeira.</p>
+          <span class="dest-card__price">à partir de 620€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1590523277543-a94d2e4eb00b?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Maldives"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Maldives</span>
+          <h3>Maldives</h3>
+          <p>Villas sur pilotis, lagons turquoise et silence total, les pieds dans l'eau.</p>
+          <span class="dest-card__price">à partir de 1 190€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1523539693385-e5e891eb4465?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Bali, Indonésie"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Indonésie</span>
+          <h3>Bali</h3>
+          <p>Rizières en terrasses, temples sacrés et plages secrètes sur l'île des dieux.</p>
+          <span class="dest-card__price">à partir de 990€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1518684079-3c830dcef090?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Dubaï, Émirats"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Émirats</span>
+          <h3>Dubaï</h3>
+          <p>Gratte-ciels vertigineux, désert doré et luxe accessible, à deux pas de l'Algérie.</p>
+          <span class="dest-card__price">à partir de 540€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1502602898657-3e91760cbb34?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Paris, France"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">France</span>
+          <h3>Paris</h3>
+          <p>La ville lumière — musées, gastronomie et romantisme, accompagnement visa inclus.</p>
+          <span class="dest-card__price">à partir de 480€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1623621534850-d325a1980c7e?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Istanbul, Turquie"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Turquie</span>
+          <h3>Istanbul</h3>
+          <p>Entre deux continents — bazars, Bosphore et mosquées majestueuses.</p>
+          <span class="dest-card__price">à partir de 390€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1597212618440-806262de4f6b?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Marrakech, Maroc"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Maroc</span>
+          <h3>Marrakech</h3>
+          <p>Médina ocre, souks animés et riads paisibles au pied de l'Atlas.</p>
+          <span class="dest-card__price">à partir de 310€</span>
+        </div>
+      </article>
+
+      <article class="dest-card" data-reveal data-tilt>
+        <div class="dest-card__media"><img loading="lazy" src="https://images.unsplash.com/photo-1559925906-3da1c5807d61?auto=format&fit=crop&w=600&h=800&q=80" width="600" height="800" alt="Cappadoce, Turquie"></div>
+        <div class="dest-card__glow"></div>
+        <div class="dest-card__body">
+          <span class="dest-card__tag">Turquie</span>
+          <h3>Cappadoce</h3>
+          <p>Un lever de soleil, des centaines de montgolfières, un souvenir pour la vie.</p>
+          <span class="dest-card__price">à partir de 450€</span>
+        </div>
+      </article>
+
+    </div>
+  </section>
+
+  <!-- ===== Comment ça marche ===== -->
+  <section class="section" id="etapes">
+    <p class="section__eyebrow" data-reveal>Le parcours</p>
+    <h2 class="section__title" data-reveal>De l'envie au décollage, en 4 étapes.</h2>
+
+    <div class="steps" id="steps">
+      <div class="steps__line"><i id="stepsFill"></i></div>
+      <div class="step" data-reveal>
+        <span class="step__num">01</span>
+        <h3>On discute de votre projet</h3>
+        <p>Un message sur WhatsApp suffit : destination, budget, dates, envies. On écoute.</p>
+      </div>
+      <div class="step" data-reveal>
+        <span class="step__num">02</span>
+        <h3>On construit l'itinéraire</h3>
+        <p>Vols, hôtels, activités et visas — un devis sur-mesure en moins de 24h.</p>
+      </div>
+      <div class="step" data-reveal>
+        <span class="step__num">03</span>
+        <h3>Réservation & documents</h3>
+        <p>Vous validez, on s'occupe de toute la paperasse et des confirmations.</p>
+      </div>
+      <div class="step" data-reveal>
+        <span class="step__num">04</span>
+        <h3>Vous partez</h3>
+        <p>Un support disponible pendant tout le séjour, au cas où. Vous, vous profitez.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== Avis émotionnels ===== -->
+  <section class="stories" id="avis">
+    <p class="section__eyebrow light" data-reveal>Leurs histoires</p>
+    <h2 class="section__title light" data-reveal>Ce qu'ils ont ressenti, là-bas.</h2>
+
+    <div class="stories__stage" id="storyStage">
+      <div class="story is-active">
+        <div class="story__body">
+          <div class="story__stars">★★★★★</div>
+          <blockquote>« La première fois que j'ai vu le Bosphore au lever du soleil, j'ai pleuré. Tout était déjà réglé — hôtel, visa, transferts — je n'avais qu'à <em>vivre</em> le moment. Je ne pensais pas qu'un voyage pouvait me faire cet effet. »</blockquote>
+          <footer><strong>Sarah B.</strong><span>Istanbul · voyage de noces</span></footer>
+        </div>
+      </div>
+      <div class="story">
+        <div class="story__body">
+          <div class="story__stars">★★★★★</div>
+          <blockquote>« J'avais peur de me faire arnaquer, comme d'habitude. Réponse en quelques heures sur WhatsApp, prix honnête, zéro mauvaise surprise. Pour la première fois, j'ai fait confiance — et j'ai eu raison. »</blockquote>
+          <footer><strong>Yacine M.</strong><span>Dubaï · voyage en famille</span></footer>
+        </div>
+      </div>
+      <div class="story">
+        <div class="story__body">
+          <div class="story__stars">★★★★★</div>
+          <blockquote>« Le circuit était pensé pour <em>nous deux</em>, pas pour un groupe de 40 inconnus. Chaque soir, une nouvelle rizière, un nouveau temple, et l'impression que quelqu'un veillait sur nous à distance. On est rentrés changés. »</blockquote>
+          <footer><strong>Lina &amp; Karim</strong><span>Bali · lune de miel</span></footer>
+        </div>
+      </div>
+      <div class="story">
+        <div class="story__body">
+          <div class="story__stars">★★★★★</div>
+          <blockquote>« Mes parents n'avaient jamais pris l'avion. Les voir émerveillés devant les montgolfières de Cappadoce, ça n'a pas de prix. Tout a été si simple pour eux que ma mère m'a demandé quand est-ce qu'on repart. »</blockquote>
+          <footer><strong>Nadia K.</strong><span>Cappadoce · voyage en famille</span></footer>
+        </div>
+      </div>
+    </div>
+
+    <div class="stories__nav">
+      <button class="stories__arrow" id="storyPrev" aria-label="Précédent" data-magnetic>‹</button>
+      <div class="stories__dots" id="storyDots"></div>
+      <button class="stories__arrow" id="storyNext" aria-label="Suivant" data-magnetic>›</button>
+    </div>
+  </section>
+
+  <!-- ===== Contact / CTA final ===== -->
+  <section class="cta-final" id="contact">
+    <div class="cta-final__bg" id="ctaFinalBg" data-bg="https://images.unsplash.com/photo-1674941237715-6f4f9a58636a?auto=format&fit=crop&q=70"></div>
+    <div class="cta-final__veil"></div>
+    <div class="cta-final__content">
+      <p class="section__eyebrow light" data-reveal>Prêt à partir ?</p>
+      <h2 data-reveal>Votre prochain souvenir<br>commence par un message.</h2>
+      <p data-reveal>Dites-nous juste où vous rêvez d'aller. On construit le reste — sans engagement.</p>
+      <a href="#" id="kvWhatsapp" class="btn btn--whatsapp" data-reveal data-magnetic>
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.39 1.26 4.81L2 22l5.42-1.36a9.85 9.85 0 0 0 4.62 1.15h.01c5.46 0 9.9-4.45 9.9-9.91C21.95 6.45 17.5 2 12.04 2Zm0 17.9h-.01a8.2 8.2 0 0 1-4.16-1.14l-.3-.18-3.1.78.83-3.02-.2-.31a8.17 8.17 0 0 1-1.26-4.35c0-4.53 3.69-8.22 8.24-8.22 2.2 0 4.27.86 5.82 2.41a8.16 8.16 0 0 1 2.41 5.82c0 4.54-3.69 8.21-8.27 8.21Zm4.52-6.16c-.25-.12-1.47-.72-1.7-.81-.23-.08-.39-.12-.56.13-.17.25-.64.81-.78.97-.14.17-.29.19-.53.06-.25-.12-1.05-.39-2-1.23-.74-.66-1.24-1.47-1.39-1.72-.14-.25-.02-.38.11-.51.11-.11.25-.29.37-.43.12-.15.16-.25.25-.42.08-.17.04-.31-.02-.44-.06-.12-.56-1.35-.77-1.85-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.44.06-.67.31-.23.25-.87.85-.87 2.08 0 1.22.89 2.4 1.02 2.57.12.17 1.75 2.67 4.24 3.75.59.26 1.06.41 1.42.52.6.19 1.14.16 1.57.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.08.14-1.18-.06-.11-.23-.17-.48-.29Z"/></svg>
+        <span>Discuter sur WhatsApp</span>
+      </a>
+      <p class="cta-final__mail" data-reveal>ou par email : <a href="mailto:klaa.raed.main@gmail.com">klaa.raed.main@gmail.com</a></p>
+    </div>
+  </section>
+
+  <footer class="kv-footer">
+    <p>Démo de style réalisée par <strong>Klaa Raéd</strong> — freelance développeur web &amp; logiciel.</p>
+    <a href="index.html#projets">← Retour au portfolio</a>
+  </footer>
+
+  <!-- Three.js n'est plus chargé ici : il est injecté par js/voyage.js
+       uniquement quand la section globe approche (gain de poids initial). -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="js/cursor.js" defer></script>
+  <script src="js/voyage.js" defer></script>
+</body>
+</html>

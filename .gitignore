@@ -1,0 +1,22 @@
+# ================================================================
+#  .gitignore — Portfolio Klaa Raéd
+# ================================================================
+
+# Fichiers de test temporaires
+_test*-DELETE-ME.html
+_synctest.txt
+
+# Système d'exploitation & éditeurs
+.DS_Store
+Thumbs.db
+desktop.ini
+*.log
+*.tmp
+*.bak
+*.swp
+.vscode/
+.idea/
+*.code-workspace
+
+# Dépendances éventuelles
+node_modules/
